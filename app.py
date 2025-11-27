@@ -590,7 +590,16 @@ def chatbot():
         prediction = f"Given your values, the suggested fertilizer is 🌿 {fertilizer_pred}."
 
     elif intent == "pest_detection":
-        prediction = get_pest_detection(data)
+    # Return immediately with link
+     return jsonify({
+        "bot": (
+            "🐛 **Pest Detection**\n\n"
+            "Upload your crop image here to detect pests instantly:\n\n"
+            "👉https://krishi-gram.vercel.app/pest_detection\n\n"
+            "It will analyze the image and will detect the pest."
+        )
+    })
+
 
     elif intent == "weather_query":
         city = data.get("location", "your area")
