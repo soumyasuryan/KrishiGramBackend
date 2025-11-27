@@ -517,10 +517,8 @@ def chatbot():
                 {"label": "📈 Market Prices", "value": "market_price_query"}
             ]
         })
+    intent = session["intent"]
 
-    # Otherwise continue normally
-    intent = detect_intent(user_msg) if not intent else intent
-    session["intent"] = intent
 
     expected_fields = required_fields.get(intent, [])
 
