@@ -9,3 +9,4 @@ requests
 torch
 rapidfuzz
 gunicorn
+xgboost
