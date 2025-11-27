@@ -588,7 +588,7 @@ def chatbot():
         prediction = f"Given your values, the suggested fertilizer is 🌿 {fertilizer_pred}."
 
     elif intent == "pest_detection":
-      prediction="Upload your crop image here to detect pests instantly:<br><br>🐛 <b>Pest Detection</b><br><br>👉 <a href='https://your-frontend-domain.com/pest_detection' target='_blank' style='color:blue;text-decoration:underline;'>Click here to open Pest Detection</a><br><br>It will analyze the image using the trained model! 📸🌱'"
+      prediction="Upload your crop image here to detect pests instantly:<br><br>🐛 <b>Pest Detection</b><br><br>👉 <a href='https://krishi-gram.vercel.app/pest_detection' target='_blank' style='color:blue;text-decoration:underline;'>Click here to open Pest Detection</a><br><br>It will analyze the image using the trained model! 📸🌱'"
         
 
 
